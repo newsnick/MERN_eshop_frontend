@@ -40,7 +40,7 @@ export const login = (email, password) => async (dispatch) => {
     }
 
     const { data } = await axios.post(
-      'api/users/login',
+      'https://eshop-backend-9njr.onrender.com/api/users/login',
       {
         email,
         password,
@@ -86,7 +86,7 @@ export const register = (name, email, password) => async (dispatch) => {
     }
 
     const { data } = await axios.post(
-      'api/users',
+      'https://eshop-backend-9njr.onrender.com/api/users',
       {
         name,
         email,
