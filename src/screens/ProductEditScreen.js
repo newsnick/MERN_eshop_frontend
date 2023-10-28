@@ -69,7 +69,11 @@ const ProductEditScreen = ({ match, history }) => {
         },
       }
 
-      const { data } = await axios.post('/api/upload', formData, config)
+      const { data } = await axios.post(
+        'https://eshop-backend-9njr.onrender.com/api/upload',
+        formData,
+        config
+      )
 
       // Determine base URL dynamically based on environment
       const baseURL =
