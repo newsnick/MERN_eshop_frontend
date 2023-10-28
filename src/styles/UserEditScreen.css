@@ -1,0 +1,9 @@
+.form-check-input {
+  text-wrap: nowrap;
+  margin: 4px 15px 0px 5px;
+}
+
+.form-check-input.text {
+  background-color: inherit;
+  border-style: none;
+}

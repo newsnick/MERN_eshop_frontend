@@ -1,0 +1,32 @@
+.card-img-top {
+  height: 200px;
+}
+.card {
+  height: 410px;
+  width: 275px;
+}
+
+.img-fluid {
+  max-width: 500px;
+}
+
+/* For mobile devices (less than 768px) and tablets (768px and above) */
+@media (max-width: 767.98px), (min-width: 768px) and (max-width: 991.98px) {
+  .card-img-top {
+    height: unset;
+  }
+  .card {
+    height: unset;
+    width: unset;
+  }
+  .img-fluid {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .img-fluid {
+    max-width: 100%;
+    max-height: 35vh;
+  }
+}

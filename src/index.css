@@ -1,0 +1,112 @@
+main {
+  min-height: 80vh;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+/* carousel */
+
+.product-description {
+  font-weight: lighter;
+  color: darkgray;
+}
+
+.product-carousel-container {
+  margin: 20px;
+}
+
+.carousel-caption {
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 25vw;
+  height: 360px;
+  left: 78%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-indicators {
+  margin-left: 50%;
+  margin-right: 5%;
+}
+
+.product-name {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0;
+}
+/* .product-name-mobile {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0;
+} */
+
+.carousel-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.carousel-image {
+  height: 400px;
+}
+
+/* Default styles for product name in mobile/tablet devices */
+.product-name-mobile {
+  display: none; /* Hide the mobile version by default */
+}
+
+.carousel-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.carousel-image {
+  height: 400px;
+  width: 60%;
+}
+
+/* Media query for mobile and tablet devices */
+@media only screen and (max-width: 768px) {
+  /* Hide desktop version of product name */
+  .product-name,
+  .product-description {
+    display: none;
+  }
+  .carousel-image {
+    width: unset;
+  }
+
+  /* Display mobile version of product name */
+
+  .product-name-mobile {
+    display: flex;
+    width: 275px;
+    top: 24px;
+    position: absolute;
+    margin-top: 270px;
+
+    left: -135px;
+  }
+}
