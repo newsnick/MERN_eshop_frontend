@@ -43,6 +43,11 @@ export const removeFromCart = (id) => (dispatch, getState) => {
   dispatch(updateCartItemCount())
 }
 
+export const clearCartAfterSuccessPay = () => (dispatch) => {
+  // Clear cart items from localStorage
+  localStorage.removeItem('cartItems')
+}
+
 export const saveShippingAddress = (data) => (dispatch) => {
   dispatch({
     type: CART_SAVE_SHIPPING_ADDRESS,

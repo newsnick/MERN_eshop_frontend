@@ -20,6 +20,12 @@ const Header = () => {
     navigate('/')
   }
 
+  const handleCartClick = () => {
+    navigate('/cart')
+    // Reload the page when the cart link is clicked
+    window.location.reload()
+  }
+
   return (
     <header>
       <Navbar
@@ -38,7 +44,7 @@ const Header = () => {
             <SearchBox />
             <Nav className='ms-auto'>
               <LinkContainer to='/cart'>
-                <Nav.Link>
+                <Nav.Link onClick={handleCartClick}>
                   <i className='fas fa-shopping-cart'></i>Cart{' '}
                   {itemCount > 0 && <span className='badge'>{itemCount}</span>}
                 </Nav.Link>
