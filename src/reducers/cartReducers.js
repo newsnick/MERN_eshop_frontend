@@ -3,6 +3,7 @@ import {
   CART_REMOVE_ITEM,
   CART_SAVE_PAYMENT_METHOD,
   CART_SAVE_SHIPPING_ADDRESS,
+  RESET_CART_ITEM_COUNT,
   UPDATE_CART_ITEM_COUNT,
 } from '../constants/cartConstants'
 
@@ -48,6 +49,11 @@ export const cartReducer = (
       return {
         ...state,
         itemCount: action.payload,
+      }
+    case RESET_CART_ITEM_COUNT:
+      return {
+        ...state,
+        itemCount: 0,
       }
     default:
       return state

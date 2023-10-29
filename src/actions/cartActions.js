@@ -5,6 +5,7 @@ import {
   CART_SAVE_SHIPPING_ADDRESS,
   CART_SAVE_PAYMENT_METHOD,
   UPDATE_CART_ITEM_COUNT,
+  RESET_CART_ITEM_COUNT,
 } from '../constants/cartConstants'
 
 export const addToCart = (id, qty) => async (dispatch, getState) => {
@@ -68,5 +69,11 @@ export const updateCartItemCount = () => (dispatch, getState) => {
   dispatch({
     type: UPDATE_CART_ITEM_COUNT,
     payload: itemCount,
+  })
+}
+
+export const resetCartItemCount = () => (dispatch) => {
+  dispatch({
+    type: RESET_CART_ITEM_COUNT,
   })
 }
