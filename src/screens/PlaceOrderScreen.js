@@ -56,8 +56,8 @@ const PlaceOrderScreen = () => {
   return (
     <>
       <CheckoutSteps step1 step2 step3 step4 />
-      <Link className='btn btn-light mb-3 p-1' to='/payment'>
-        <i class='fa-solid fa-angle-left'> </i> Payment Method
+      <Link className='btn btn-light mb-3' to='/payment'>
+        <i class='fa-solid fa-angle-left'> </i> Payment
       </Link>
       <Row>
         <Col md={8}>

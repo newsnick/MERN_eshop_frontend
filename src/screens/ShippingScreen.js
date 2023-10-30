@@ -32,7 +32,7 @@ const ShippingScreen = ({ history }) => {
   return (
     <FormContainer>
       <CheckoutSteps step1 step2 />{' '}
-      <Link className='btn btn-light mb-3 p-1' to='/cart'>
+      <Link className='btn btn-light mb-3' to='/cart'>
         <i class='fa-solid fa-angle-left'> </i> <span> </span>
         Shopping Cart
       </Link>
